@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28729.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rain_Interface", "Rain_Interface\Rain_Interface.csproj", "{A0005000-C9A1-4A98-9FDA-0BFA1C3BED3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0005000-C9A1-4A98-9FDA-0BFA1C3BED3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0005000-C9A1-4A98-9FDA-0BFA1C3BED3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0005000-C9A1-4A98-9FDA-0BFA1C3BED3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0005000-C9A1-4A98-9FDA-0BFA1C3BED3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {239CF29E-0E3C-4702-B471-AA38CE48CFE6}
+	EndGlobalSection
+EndGlobal
