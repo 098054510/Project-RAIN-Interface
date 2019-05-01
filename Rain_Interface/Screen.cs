@@ -37,6 +37,66 @@ namespace Rain_Interface
             Console.WriteLine("1 - Language");
             Console.WriteLine("2 - Set Time");
             Console.Write("Your Choice: ");
+            int X = int.Parse(Console.ReadLine());
+            if (X == 1)
+            {
+
+            }
+        }
+
+        public static void Calculator()
+        {
+            Console.WriteLine("----Calculator----");
+            Console.WriteLine("Enter the operation you want to do.");
+            Console.WriteLine("1 - Sum");
+            Console.WriteLine("2 - Subtraction");
+            Console.WriteLine("3 - Multiplication");
+            Console.WriteLine("4 - Division");
+            Console.Write("Your Choice: ");
+            int X = int.Parse(Console.ReadLine());
+            if (X == 1)
+            {
+                Console.Write("Enter the first sum value: ");
+                int Y = int.Parse(Console.ReadLine());
+                Console.Write("Enter the second sum value: ");
+                int Z = int.Parse(Console.ReadLine());
+                int A = Y + Z;
+                Console.WriteLine(Y + " + " + Z + " = " + A);
+            }
+            if (X == 2)
+            {
+                Console.Write("Enter the first subtraction value: ");
+                int Y = int.Parse(Console.ReadLine());
+                Console.Write("Enter the second subtraction value: ");
+                int Z = int.Parse(Console.ReadLine());
+                int A = Y - Z;
+                Console.WriteLine(Y + " - " + Z + " = " + A);
+            }
+            if (X == 3)
+            {
+                Console.Write("Enter the first multiplication value: ");
+                int Y = int.Parse(Console.ReadLine());
+                Console.Write("Enter the second multiplication value: ");
+                int Z = int.Parse(Console.ReadLine());
+                int A = Y * Z;
+                Console.WriteLine(Y + " * " + Z + " = " + A);
+            }
+            if (X == 4)
+            {
+                Console.Write("Enter the first division value: ");
+                int Y = int.Parse(Console.ReadLine());
+                Console.Write("Enter the second division value: ");
+                int Z = int.Parse(Console.ReadLine());
+                int A = Y / Z;
+                Console.WriteLine(Y + " / " + Z + " = " + A);
+            }
+        }
+
+        public static void Stopwatch()
+        {
+            int x = int.Parse(Console.ReadLine());
+            Console.WriteLine("----StopWatch----");
+            Console.WriteLine("");
         }
     }
 }

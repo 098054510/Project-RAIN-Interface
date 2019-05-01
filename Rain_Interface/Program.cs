@@ -19,12 +19,12 @@ namespace Rain_Interface
                     switch (option)
                     {
                         case 1:
+                            Console.Clear();
                             Screen.Functions();
                             try
                             {
                                 option = int.Parse(Console.ReadLine());
                             }
-
                             catch (Exception e)
                             {
                                 Console.WriteLine("Internal Error " + e.Message);
@@ -32,6 +32,7 @@ namespace Rain_Interface
                             }
                             break;
                         case 2:
+                            Console.Clear();
                             Screen.Options();
                             try
                             {
@@ -43,6 +44,9 @@ namespace Rain_Interface
                                 option = 0;
                             }
                             break;
+                        case 3:
+                            Console.WriteLine("Ending...");
+                            break;
                     }
                 }
                 catch (Exception e)
@@ -51,6 +55,32 @@ namespace Rain_Interface
                     option = 0;
                 }
                 break;
+            }
+
+            Console.Clear();
+
+            int option1 = 0;
+            while (option1 == 0)
+            {
+                Console.Clear();
+                Screen.Functions();
+                option1 = int.Parse(Console.ReadLine());
+                switch (option1)
+                {
+                    case 2:
+                        Console.Clear();
+                        Screen.Calculator();
+                        try
+                        {
+                            option1 = int.Parse(Console.ReadLine());
+                        }
+                        catch (Exception e)
+                        {
+                            Console.WriteLine("Internal Error " + e.Message);
+                            option1 = 0;
+                        }
+                        break;
+                }
             }
         }
     }
