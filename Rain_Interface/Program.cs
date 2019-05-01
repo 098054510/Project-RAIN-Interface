@@ -56,32 +56,6 @@ namespace Rain_Interface
                 }
                 break;
             }
-
-            Console.Clear();
-
-            int option1 = 0;
-            while (option1 == 0)
-            {
-                Console.Clear();
-                Screen.Functions();
-                option1 = int.Parse(Console.ReadLine());
-                switch (option1)
-                {
-                    case 2:
-                        Console.Clear();
-                        Screen.Calculator();
-                        try
-                        {
-                            option1 = int.Parse(Console.ReadLine());
-                        }
-                        catch (Exception e)
-                        {
-                            Console.WriteLine("Internal Error " + e.Message);
-                            option1 = 0;
-                        }
-                        break;
-                }
-            }
         }
     }
 }

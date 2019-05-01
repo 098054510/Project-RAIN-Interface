@@ -29,6 +29,29 @@ namespace Rain_Interface
             Console.WriteLine("4 - Music Player");
             Console.WriteLine("5 - Back to Main Menu");
             Console.Write("Your Choice: ");
+            int X = int.Parse(Console.ReadLine());
+            if (X == 1)
+            {
+                
+            }
+            if (X == 2)
+            {
+                Console.Clear();
+                Calculator();
+            }
+            if (X == 3)
+            {
+
+            }
+            if (X == 4)
+            {
+
+            }
+            if (X == 5)
+            {
+                Console.Clear();
+                Main_Screen();
+            }
         }
 
         public static void Options()
@@ -52,16 +75,29 @@ namespace Rain_Interface
             Console.WriteLine("2 - Subtraction");
             Console.WriteLine("3 - Multiplication");
             Console.WriteLine("4 - Division");
+            Console.WriteLine("5 - Back");
             Console.Write("Your Choice: ");
             int X = int.Parse(Console.ReadLine());
             if (X == 1)
             {
-                Console.Write("Enter the first sum value: ");
-                int Y = int.Parse(Console.ReadLine());
-                Console.Write("Enter the second sum value: ");
-                int Z = int.Parse(Console.ReadLine());
-                int A = Y + Z;
-                Console.WriteLine(Y + " + " + Z + " = " + A);
+                Console.Clear();
+                Console.WriteLine("----Calculator----");
+                Sum_Calculator();
+                Console.WriteLine("Do you want repeat?");
+                Console.WriteLine("1 - Yes");
+                Console.WriteLine("2 - No");
+                Console.Write("Your choice: ");
+                int C = int.Parse(Console.ReadLine());
+                if (C == 1)
+                {
+                    Console.Clear();
+                    Sum_Calculator();
+                }
+                if (C == 2)
+                {
+                    Console.Clear();
+                    Calculator();
+                }
             }
             if (X == 2)
             {
@@ -90,6 +126,21 @@ namespace Rain_Interface
                 int A = Y / Z;
                 Console.WriteLine(Y + " / " + Z + " = " + A);
             }
+            if (X == 5)
+            {
+                Console.Clear();
+                Functions();
+            }
+        }
+
+        public static void Sum_Calculator()
+        {
+            Console.Write("Enter the first sum value: ");
+            int Y = int.Parse(Console.ReadLine());
+            Console.Write("Enter the second sum value: ");
+            int Z = int.Parse(Console.ReadLine());
+            int A = Y + Z;
+            Console.WriteLine(Y + " + " + Z + " = " + A);
         }
 
         public static void Stopwatch()
